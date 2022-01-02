@@ -1,0 +1,190 @@
+
+:root{
+    --primary-text-color: #757575 ;
+    --tittle-text-color: #212121;
+    --accent-color:#2196F3;
+    --white-color:#ffffff;
+    --background-grey: #2F303A;
+    --background-light-grey: #F5F4FA;
+}
+body{
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+}
+.list {
+    list-style: none;
+}
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+/* фон футер и герой #2F303A */
+
+.logo {
+    color: var(--tittle-text-color);
+    text-decoration: none; 
+
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-1 {
+    color: var(--accent-color);
+}
+/* site-nav */
+.site-nav .link {
+    color: var(--tittle-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+.site-nav .link:active{
+    color: var(--accent-color);
+}
+.call .link{
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-decoration: none;
+}
+.call .link:focus,
+.call .link:hover{
+    color: var(--accent-color);
+}
+.hero{
+    background-color: var(--background-grey);
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--white-color);
+}
+.main-button{
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+.hidden-header{
+    display: none;
+}
+.benefits{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.benefits-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--tittle-text-color);
+}
+.title-two{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--tittle-text-color);
+    letter-spacing: 0.03em;
+}
+.employee{
+    background-color: var(--background-light-grey);
+}
+.name-employee{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--tittle-text-color);
+}
+.profession{
+    font-size: 16px;
+    line-height: 1.19;
+}
+.footer{
+    background-color: var(--background-grey);
+    
+}
+.logo-footer{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.logo-footer-web{
+    color: var(--accent-color);
+}
+.address{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-color);
+}
+.address:hover,
+.adress:focus{
+    color: var(--accent-color);
+}
+.address-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus{
+    color: var(--accent-color);
+}
+
+.filter-link{
+    text-align: center;
+}
+.filter{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--tittle-text-color);
+    cursor: pointer;
+}
+.filter:hover,
+.filter:focus{
+    background-color:  var(--accent-color);
+    color: var(--white-color);
+}
+.link-filter{
+    text-decoration: none;
+}
+.title-filter{
+    font-size: 18px;
+    line-height: 2;
+    color: var(--tittle-text-color);
+}
+.text-filter{
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
