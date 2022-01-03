@@ -168,7 +168,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 .footer{
     background-color: var(--background-grey);
-    
 }
 .logo-footer{
     font-family: Raleway;
@@ -223,17 +222,31 @@ h1,h2,h3,h4,h5,h6,p,ul{
     background-color:  var(--accent-color);
     color: var(--white-color);
 }
+.galery li{
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
 .link-filter{
     text-decoration: none;
+    padding: 0;
 }
 .title-filter{
     font-size: 18px;
     line-height: 2;
     color: var(--tittle-text-color);
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 .text-filter{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 20px;
+    margin-left: 24px;
 }
