@@ -13,6 +13,8 @@ body{
     font-family: roboto, sans-serif;
 }
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 /* основной цвет текста #212121 */
@@ -21,6 +23,12 @@ body{
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 /* фон футер и герой #2F303A */
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 
 .logo {
     color: var(--tittle-text-color);
@@ -52,7 +60,6 @@ body{
 }
 .call .link{
     color: var(--primary-text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
@@ -64,17 +71,22 @@ body{
 }
 .hero{
     background-color: var(--background-grey);
+    text-align: center;
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     color: var(--white-color);
+    
 }
 .main-button{
-    width: 200px;
-    height: 50px;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 32px;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
@@ -82,7 +94,8 @@ body{
     text-align: center;
     cursor: pointer;
     letter-spacing: 0.06em;
-    
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--accent-color);
     color: var(--white-color);
 }
