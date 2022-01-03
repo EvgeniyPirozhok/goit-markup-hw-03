@@ -179,7 +179,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--white-color);
     letter-spacing: 0.03em;
     text-decoration: none;
-    
+    margin-bottom: 20px;
 }
 .logo-footer-web{
     color: var(--accent-color);
@@ -200,6 +200,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 60px;
 }
 .address-link:hover,
 .address-link:focus{
