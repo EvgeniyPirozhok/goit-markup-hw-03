@@ -37,6 +37,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section.no-padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .logo {
     color: var(--tittle-text-color);
@@ -146,10 +150,21 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 16px;
     line-height: 1.19;
     color: var(--tittle-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .profession{
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 30px;
+}
+.employee li{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
+    text-align: center;
 }
 .footer{
     background-color: var(--background-grey);
@@ -162,7 +177,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 26px;
     line-height: 1.19;
     color: var(--white-color);
+    letter-spacing: 0.03em;
     text-decoration: none;
+    
 }
 .logo-footer-web{
     color: var(--accent-color);
@@ -172,6 +189,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     font-size: 14px;
     line-height: 1.7;
     color: var(--white-color);
+    
 }
 .address:hover,
 .adress:focus{
