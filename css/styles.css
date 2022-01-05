@@ -140,9 +140,18 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .hidden-header{
     display: none;
 }
+.benefits-section{
+margin-bottom: 94px;
+display: flex;
+}
+.benefits-section li{
+    width: 270px;
+}
+.benefits-section li:not(:first-child) {
+    margin-left: 30px;
+}
 .benefits{
     margin-top: 0;
-    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -166,9 +175,19 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 .work-examples{
     margin-bottom: 94px;
+    display: flex;
+}
+.work-examples li:not(:first-child){
+    margin-left: 30px;
 }
 .employee{
     background-color: var(--background-light-grey);
+}
+.employee ul{
+    display: flex;
+}
+.employee ul li:not(:first-child){
+    margin-left: 30px;
 }
 .name-employee{
     font-weight: 500;
@@ -233,15 +252,28 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 .filter-link{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-link li:nth-child(1n+2){
+margin-left: 8px;
 }
 .filter{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
     color: var(--tittle-text-color);
+    background: #F5F4FA;
     cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
+
 .filter:hover,
 .filter:focus{
     background-color:  var(--accent-color);
@@ -251,16 +283,26 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: flex;
     flex-wrap: wrap;
 }
-.galery li{
+.galery-li{
     width: 370px;
     height: 404px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.galery-li:nth-child(3n+1){
+    margin-left: 0;
+}
+.galery-li:nth-child(-n+3){
+    margin-top: 0;
 }
 .link-filter{
     text-decoration: none;
     padding: 0;
+    margin: 0;
 }
 .title-filter{
     font-size: 18px;
