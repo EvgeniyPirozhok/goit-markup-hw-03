@@ -213,6 +213,12 @@ display: flex;
 }
 .footer{
     background-color: var(--background-grey);
+
+}
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 .logo-footer{
     font-family: Raleway;
@@ -223,17 +229,23 @@ display: flex;
     color: var(--white-color);
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-bottom: 20px;
 }
+
 .logo-footer-web{
     color: var(--accent-color);
+}
+address{
+    margin-top: 20px;
+}
+address li:not(:last-child){
+    margin-bottom: 9px;
 }
 .address{
     text-decoration: none;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white-color);
-    
+    margin-top: 20px;
 }
 .address:hover,
 .adress:focus{
