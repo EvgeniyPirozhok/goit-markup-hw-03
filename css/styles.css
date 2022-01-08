@@ -6,6 +6,7 @@
     --white-color:#ffffff;
     --background-grey: #2F303A;
     --background-light-grey: #F5F4FA;
+    --card-set-gap: 30px;
 }
 body{
     background-color: var(--white-color);
@@ -16,6 +17,11 @@ body{
     padding: 0;
     margin: 0;
     list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* основной цвет текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -292,52 +298,44 @@ margin-left: 8px;
     background-color:  var(--accent-color);
     color: var(--white-color);
 }
-.galery{
-    display: flex;
-    flex-wrap: wrap;
-}
-.frame{
-border: 1px solid #EEEEEE;
-border-top: none;
-}
-
-.img-frame{
-    display: block;
-}
-.galery-li{
-    width: 370px;
-    height: 404px;
-    background: #FFFFFF;
-    box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.galery-li:nth-child(3n+1){
-    margin-left: 0;
-}
-.galery-li:nth-child(-n+3){
-    margin-top: 0;
-}
 .link-filter{
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
+.galery{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
 .title-filter{
     font-size: 18px;
     line-height: 2;
     color: var(--tittle-text-color);
     letter-spacing: 0.06em;
-    padding-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 .text-filter{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 20px;
-    margin-left: 24px;
 }
+.frame{
+border: 1px solid #EEEEEE;
+border-top: none;
+padding: 20px 24px;
+}
+.galery-li{
+    flex-basis: calc(100%/3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);   
+}
+
+
+
