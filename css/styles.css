@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
     padding-bottom: 0;
 }
 
+/* Шапка */
 .logo {
     color: var(--tittle-text-color);
     text-decoration: none; 
@@ -112,20 +113,22 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: flex;
     align-items: center;
 }
+
+/* Герой */
+
+
 .hero{
-    margin-bottom: 94px;
     background-color: var(--background-grey);
     text-align: center;
 }
 .hero-title{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     
     color: var(--white-color);
-    
 }
 .main-button{
     min-width: 200px;
@@ -144,33 +147,37 @@ h1,h2,h3,h4,h5,h6,p,ul{
     background-color: var(--accent-color);
     color: var(--white-color);
 }
+
+/* Преимущества */
+
 .hidden-header{
     display: none;
 }
 .benefits-section{
-margin-bottom: 94px;
 display: flex;
+margin-left: calc( -1 * var(--card-set-gap));
 }
-.benefits-section li{
-    width: 270px;
+.benefits-li{
+    margin-left: var(--card-set-gap);
 }
-.benefits-section li:not(:first-child) {
-    margin-left: 30px;
-}
+
 .benefits{
-    margin-top: 0;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .benefits-title{
-    margin-top: 0;
+    
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     color: var(--tittle-text-color);
 }
+
+/* Примеры работ */
+
 .title-two{
     font-weight: bold;
     font-size: 36px;
@@ -181,35 +188,36 @@ display: flex;
     margin-bottom: 50px;
 }
 .work-examples{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     display: flex;
+    margin-left: calc(-1 * var(--card-set-gap));
 }
-.work-examples li:not(:first-child){
-    margin-left: 30px;
+.work-examples-li{
+    margin-left: var(--card-set-gap); 
 }
 .employee{
     background-color: var(--background-light-grey);
 }
-.employee ul{
+.employee-ul{
     display: flex;
+    margin-left: calc(-1 * var(--card-set-gap));
 }
-.employee ul li:not(:first-child){
-    margin-left: 30px;
-}
+
 .name-employee{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: var(--tittle-text-color);
-    margin-top: 30px;
+    margin-top: var(--card-set-gap);
     margin-bottom: 10px;
 }
 .profession{
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
 }
-.employee li{
+.employee-li{
+    margin-left: var(--card-set-gap);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
@@ -217,6 +225,9 @@ display: flex;
     background: #FFFFFF;
     text-align: center;
 }
+
+/* Подвал */
+
 .footer{
     background-color: var(--background-grey);
 
