@@ -121,16 +121,19 @@ header{
 
 
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--background-grey);
     text-align: center;
 }
 .hero-title{
-    margin-top: 0;
+    
     margin-bottom: var(--card-set-gap);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--white-color);
 }
 .main-button{
