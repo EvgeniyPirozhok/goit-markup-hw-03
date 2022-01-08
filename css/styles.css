@@ -177,7 +177,9 @@ margin-left: calc( -1 * var(--card-set-gap));
 }
 
 /* Примеры работ */
-
+.our-work{
+    padding-top: 0;
+}
 .title-two{
     font-weight: bold;
     font-size: 36px;
