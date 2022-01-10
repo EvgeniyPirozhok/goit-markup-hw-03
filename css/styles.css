@@ -157,28 +157,31 @@ header{
 /* Преимущества */
 
 .hidden-header{
-    display: none;
+display: none;
 }
 .benefits-section{
 display: flex;
-margin-left: calc( -1 * var(--card-set-gap));
 }
 .benefits-li{
-    margin-left: var(--card-set-gap);
+width: 270px;
+} 
+
+.benefits-li:not(:first-child){
+    margin-left:var(--card-set-gap);
 }
 
 .benefits{
-    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    
 }
 .benefits-title{
-    
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: var(--tittle-text-color);
 }
 
@@ -196,11 +199,9 @@ margin-left: calc( -1 * var(--card-set-gap));
     margin-bottom: 50px;
 }
 .work-examples{
-    padding-bottom: 94px;
     display: flex;
-    margin-left: calc(-1 * var(--card-set-gap));
 }
-.work-examples-li{
+.work-examples-li:not(:first-child){
     margin-left: var(--card-set-gap); 
 }
 .employee{
@@ -208,7 +209,6 @@ margin-left: calc( -1 * var(--card-set-gap));
 }
 .employee-ul{
     display: flex;
-    margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .name-employee{
@@ -224,8 +224,10 @@ margin-left: calc( -1 * var(--card-set-gap));
     line-height: 1.19;
     margin-bottom: var(--card-set-gap);
 }
-.employee-li{
+.employee-li:not(:first-child){
     margin-left: var(--card-set-gap);
+}
+.employee-li{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
@@ -238,13 +240,10 @@ margin-left: calc( -1 * var(--card-set-gap));
 
 .footer{
     background-color: var(--background-grey);
-
-}
-.footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
+
 .logo-footer{
     font-family: Raleway;
     font-style: normal;
@@ -254,14 +253,15 @@ margin-left: calc( -1 * var(--card-set-gap));
     color: var(--white-color);
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .logo-footer-web{
     color: var(--accent-color);
+    
 }
-address{
-    margin-top: 20px;
-}
+
 address li:not(:last-child){
     margin-bottom: 9px;
 }
@@ -321,6 +321,7 @@ margin-left: 8px;
     text-decoration: none;
     padding: 0;
     margin: 0;
+    display: block;
 }
 .galery{
     padding: 0;
